@@ -1,0 +1,6 @@
+language: objective-c
+
+osx_image: xcode8.2
+xcode_project: Morse.xcodeproj # path to your xcodeproj folder
+xcode_scheme: Morse
+xcode_sdk: iphonesimulator10.1
