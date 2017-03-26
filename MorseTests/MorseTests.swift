@@ -21,16 +21,9 @@ class MorseTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testDecriptString() {
+        let dectipt = Tree.sharedInstance
+        let value = dectipt.decriptString(morseString: Alphabet.cParenthesisSigns.1)
+        XCTAssertTrue(value == Alphabet.cParenthesisSigns.0, "\(value) is not equile \(Alphabet.cParenthesisSigns.0)");
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }

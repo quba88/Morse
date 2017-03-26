@@ -15,6 +15,12 @@
 		CE8B7E921E7E894300292861 /* MorseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8B7E911E7E894300292861 /* MorseTests.swift */; };
 		CE8B7E9D1E7E894300292861 /* MorseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8B7E9C1E7E894300292861 /* MorseUITests.swift */; };
 		CE8B7EAB1E7E89F400292861 /* MorseAlphbet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8B7EAA1E7E89F400292861 /* MorseAlphbet.swift */; };
+		CE8B7EAF1E7EDA1900292861 /* Leaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8B7EAE1E7EDA1900292861 /* Leaf.swift */; };
+		CE8B7EB11E7EDA4B00292861 /* DecriptGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8B7EB01E7EDA4B00292861 /* DecriptGraph.swift */; };
+		CE8B7EB31E7EE14F00292861 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8B7EB21E7EE14F00292861 /* Node.swift */; };
+		CE8B7EB41E7EEDA400292861 /* DecriptGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8B7EB01E7EDA4B00292861 /* DecriptGraph.swift */; };
+		CE8B7EB51E7EEDA700292861 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8B7EB21E7EE14F00292861 /* Node.swift */; };
+		CE8B7EB61E7EEDAB00292861 /* Leaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8B7EAE1E7EDA1900292861 /* Leaf.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +56,9 @@
 		CE8B7E9E1E7E894300292861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE8B7EAA1E7E89F400292861 /* MorseAlphbet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorseAlphbet.swift; sourceTree = "<group>"; };
 		CE8B7EAC1E7E9BE700292861 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		CE8B7EAE1E7EDA1900292861 /* Leaf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Leaf.swift; sourceTree = "<group>"; };
+		CE8B7EB01E7EDA4B00292861 /* DecriptGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecriptGraph.swift; sourceTree = "<group>"; };
+		CE8B7EB21E7EE14F00292861 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		CE8B7E7B1E7E894300292861 /* Morse */ = {
 			isa = PBXGroup;
 			children = (
+				CE8B7EAD1E7ED9FE00292861 /* decriptGraph */,
 				CE8B7E7C1E7E894300292861 /* AppDelegate.swift */,
 				CE8B7E7E1E7E894300292861 /* ViewController.swift */,
 				CE8B7E801E7E894300292861 /* Main.storyboard */,
@@ -128,6 +138,16 @@
 				CE8B7E9E1E7E894300292861 /* Info.plist */,
 			);
 			path = MorseUITests;
+			sourceTree = "<group>";
+		};
+		CE8B7EAD1E7ED9FE00292861 /* decriptGraph */ = {
+			isa = PBXGroup;
+			children = (
+				CE8B7EAE1E7EDA1900292861 /* Leaf.swift */,
+				CE8B7EB01E7EDA4B00292861 /* DecriptGraph.swift */,
+				CE8B7EB21E7EE14F00292861 /* Node.swift */,
+			);
+			name = decriptGraph;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,15 +218,18 @@
 				TargetAttributes = {
 					CE8B7E781E7E894200292861 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					CE8B7E8C1E7E894300292861 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CE8B7E781E7E894200292861;
 					};
 					CE8B7E971E7E894300292861 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CE8B7E781E7E894200292861;
 					};
@@ -265,7 +288,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE8B7EAB1E7E89F400292861 /* MorseAlphbet.swift in Sources */,
+				CE8B7EAF1E7EDA1900292861 /* Leaf.swift in Sources */,
 				CE8B7E7F1E7E894300292861 /* ViewController.swift in Sources */,
+				CE8B7EB31E7EE14F00292861 /* Node.swift in Sources */,
+				CE8B7EB11E7EDA4B00292861 /* DecriptGraph.swift in Sources */,
 				CE8B7E7D1E7E894300292861 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +300,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8B7EB51E7EEDA700292861 /* Node.swift in Sources */,
+				CE8B7EB61E7EEDAB00292861 /* Leaf.swift in Sources */,
+				CE8B7EB41E7EEDA400292861 /* DecriptGraph.swift in Sources */,
 				CE8B7E921E7E894300292861 /* MorseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
