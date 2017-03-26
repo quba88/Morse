@@ -45,9 +45,7 @@ class Tree: NSObject {
         
         guard let leaf = currentNode.getLeaf() else {return ""}
         
-    print("value === \(leaf.storedValue)")
     return leaf.storedValue}
-    
     
     
     
@@ -81,7 +79,18 @@ class Tree: NSObject {
          let xLetter = Leaf(storedValue: "x")
          let yLetter = Leaf(storedValue: "y")
          let zLetter = Leaf(storedValue: "z")
-        
+
+         let _aLetter = Leaf(storedValue: "ą")
+         let _cLetter = Leaf(storedValue: "ć")
+         let _eLetter = Leaf(storedValue: "ę")
+         let chLetter = Leaf(storedValue: "ch")
+         let _lLetter = Leaf(storedValue: "ł")
+         let _nLetter = Leaf(storedValue: "ń")
+         let _oLetter = Leaf(storedValue: "ó")
+         let _sLetter = Leaf(storedValue: "ś")
+         let _zLetter = Leaf(storedValue: "ż")
+         let z_Letter = Leaf(storedValue: "ź")
+    
         
         let _1Number = Leaf(storedValue: "1")
         let _2Number = Leaf(storedValue: "2")
@@ -97,8 +106,12 @@ class Tree: NSObject {
         /// left side of tree
         let node5 = Node(leaf: _5Number,leftNode: nil,rightNode: nil)
         let node4 = Node(leaf: _4Number,leftNode: nil,rightNode: nil)
-        let nodeL = Node(leaf: lLetter, leftNode: nil, rightNode: nil)
-        let nodeF = Node(leaf: fLetter, leftNode: nil, rightNode: nil)
+        let node_L = Node(leaf: _lLetter, leftNode: nil, rightNode: nil)
+
+        let nodeL = Node(leaf: lLetter, leftNode: nil, rightNode: node_L)
+        let node_E = Node(leaf: _eLetter, leftNode: nil, rightNode: nil)
+
+        let nodeF = Node(leaf: fLetter, leftNode: node_E, rightNode: nil)
         let node2 = Node(leaf: _2Number, leftNode: nil, rightNode: nil)
         let node3 = Node(leaf: _3Number, leftNode: nil, rightNode: nil)
         let nodeP = Node(leaf: pLetter, leftNode: nil, rightNode: nil)
@@ -106,8 +119,12 @@ class Tree: NSObject {
 
 
         let nodeH = Node(leaf: hLetter, leftNode: node5, rightNode: node4)
-        
-        let nodeV = Node(leaf: vLetter, leftNode: nil, rightNode: node3)
+    
+        let node_S = Node(leaf: _sLetter, leftNode: nil, rightNode: node3)
+        let nodeEmpty = Node(leaf: nil, leftNode: node_S, rightNode: node3)
+        let nodeEmpty_S = Node(leaf: nil, leftNode: nodeEmpty, rightNode: node3)
+    
+        let nodeV = Node(leaf: vLetter, leftNode: nodeEmpty_S, rightNode: node3)
         
         let nodeS = Node(leaf: sLetter, leftNode: nodeH, rightNode: nodeV)
         
@@ -115,8 +132,9 @@ class Tree: NSObject {
         let nodeU = Node(leaf: uLetter, leftNode: nodeF, rightNode: nodeUmlaut)
         
         let nodeI = Node(leaf: iLetter, leftNode: nodeS, rightNode: nodeU)
-        
-        let nodeR = Node(leaf: rLetter, leftNode: nodeL, rightNode: nil)
+        let node_A = Node(leaf: _aLetter, leftNode: nil, rightNode: nil)
+    
+        let nodeR = Node(leaf: rLetter, leftNode: nodeL, rightNode: node_A)
         let nodeJ = Node(leaf: jLetter, leftNode: nil, rightNode: node1)
         let nodeW = Node(leaf: wLetter, leftNode: nodeP, rightNode: nodeJ)
         let nodeA = Node(leaf: aLetter, leftNode: nodeR, rightNode: nodeW)
@@ -127,10 +145,14 @@ class Tree: NSObject {
   
         let node6 = Node(leaf: _6Number, leftNode: nil, rightNode: nil)
         let nodeX = Node(leaf: xLetter, leftNode: nil, rightNode: nil)
-        let nodeC = Node(leaf: cLetter, leftNode: nil, rightNode: nil)
+        let node_C = Node(leaf: _cLetter, leftNode: nil, rightNode: nil)
+
+        let nodeC = Node(leaf: cLetter, leftNode: node_C, rightNode: nil)
         let nodeY = Node(leaf: yLetter, leftNode: nil, rightNode: nil)
         let node8 = Node(leaf: _8Number, leftNode: nil, rightNode: nil)
-        let nodeQ = Node(leaf: qLetter, leftNode: nil, rightNode: nil)
+        let node_N = Node(leaf: _nLetter, leftNode: nil, rightNode: nil)
+
+        let nodeQ = Node(leaf: qLetter, leftNode: nil, rightNode: node_N)
         let node7 = Node(leaf: _7Number, leftNode: nil, rightNode: nil)
         let node9 = Node(leaf: _9Number, leftNode: nil, rightNode: nil)
         let node0 = Node(leaf: _0Number, leftNode: nil, rightNode: nil)
@@ -142,14 +164,18 @@ class Tree: NSObject {
         
         let nodeK = Node(leaf: kLetter, leftNode: nodeC, rightNode: nodeY)
         let nodeN = Node(leaf: nLetter, leftNode: nodeD, rightNode: nodeK)
-        
-        let nodeZ = Node(leaf: zLetter, leftNode: node7, rightNode: nil)
+
+        let node_Z = Node(leaf: _zLetter, leftNode: nil, rightNode: nil)
+        let nodeZ_ = Node(leaf: z_Letter, leftNode: node_Z, rightNode: nil)
+
+    
+        let nodeZ = Node(leaf: zLetter, leftNode: node7, rightNode: nodeZ_)
         let nodeG = Node(leaf: gLetter, leftNode: nodeZ, rightNode: nodeQ)
         
-        let nodeOuml = Node(leaf: nil, leftNode: node8, rightNode: nil)
+        let node_O = Node(leaf: _oLetter, leftNode: node8, rightNode: nil)
         
-        let nodeCH = Node(leaf: nil, leftNode: node9, rightNode: node0)
-        let nodeO = Node(leaf: oLetter, leftNode: nodeOuml, rightNode: nodeCH)
+        let nodeCH = Node(leaf: chLetter, leftNode: node9, rightNode: node0)
+        let nodeO = Node(leaf: oLetter, leftNode: node_O, rightNode: nodeCH)
         
         let nodeM = Node(leaf: mLetter, leftNode: nodeG, rightNode: nodeO)
         let nodeT = Node(leaf: tLetter, leftNode: nodeN, rightNode: nodeM)

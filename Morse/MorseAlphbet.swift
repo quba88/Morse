@@ -15,7 +15,7 @@ struct Alphabet {
     
     //basic aplhabet
     static let aLetter = ("a",".-")
-    static let bLetter = ("b","-..")
+    static let bLetter = ("b","-...")
     static let cLetter = ("c","-.-.")
     static let dLetter = ("d","-..")
     static let eLetter = ("e",".")

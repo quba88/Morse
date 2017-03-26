@@ -22,16 +22,11 @@ class MorseTests: XCTestCase {
     }
     
     func testDecriptString() {
-
     
         let dectipt = Tree.sharedInstance
         
+        let value = dectipt.decriptString(morseString: Alphabet.cLetter.1)
         
-        let value = dectipt.decriptString(morseString: ".-")
-        
-        
-        XCTAssertNotNil(value, "non nil");
-        
-        
+        XCTAssertTrue(value == Alphabet.cLetter.0, "\(value) is not equile \(Alphabet.cLetter.0)");
     }
 }
