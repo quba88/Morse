@@ -22,11 +22,8 @@ class MorseTests: XCTestCase {
     }
     
     func testDecriptString() {
-    
         let dectipt = Tree.sharedInstance
-        
-        let value = dectipt.decriptString(morseString: Alphabet.cLetter.1)
-        
-        XCTAssertTrue(value == Alphabet.cLetter.0, "\(value) is not equile \(Alphabet.cLetter.0)");
+        let value = dectipt.decriptString(morseString: Alphabet.cParenthesisSigns.1)
+        XCTAssertTrue(value == Alphabet.cParenthesisSigns.0, "\(value) is not equile \(Alphabet.cParenthesisSigns.0)");
     }
 }
