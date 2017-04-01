@@ -10,9 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var testTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        
+        let simpleMorseKeyboard = SimpleMorseKeyboard.instanceFromNib()
+        
+        self.testTextField.inputAccessoryView = simpleMorseKeyboard;
+        
     }
 
     override func didReceiveMemoryWarning() {

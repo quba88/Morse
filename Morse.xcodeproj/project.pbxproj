@@ -21,6 +21,9 @@
 		CE8B7EB41E7EEDA400292861 /* DecriptGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8B7EB01E7EDA4B00292861 /* DecriptGraph.swift */; };
 		CE8B7EB51E7EEDA700292861 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8B7EB21E7EE14F00292861 /* Node.swift */; };
 		CE8B7EB61E7EEDAB00292861 /* Leaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8B7EAE1E7EDA1900292861 /* Leaf.swift */; };
+		CEFA41D21E90080800243785 /* SimpleMorseKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA41D11E90080800243785 /* SimpleMorseKeyboard.swift */; };
+		CEFA41D51E90082300243785 /* SimpleMorseKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFA41D41E90082300243785 /* SimpleMorseKeyboard.xib */; };
+		CEFA41D71E900B4200243785 /* MorseKeyboardDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA41D61E900B4200243785 /* MorseKeyboardDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		CE8B7EAE1E7EDA1900292861 /* Leaf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Leaf.swift; sourceTree = "<group>"; };
 		CE8B7EB01E7EDA4B00292861 /* DecriptGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecriptGraph.swift; sourceTree = "<group>"; };
 		CE8B7EB21E7EE14F00292861 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		CEFA41D11E90080800243785 /* SimpleMorseKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleMorseKeyboard.swift; sourceTree = "<group>"; };
+		CEFA41D41E90082300243785 /* SimpleMorseKeyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleMorseKeyboard.xib; sourceTree = "<group>"; };
+		CEFA41D61E900B4200243785 /* MorseKeyboardDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorseKeyboardDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,7 @@
 				CE8B7E851E7E894300292861 /* LaunchScreen.storyboard */,
 				CE8B7E881E7E894300292861 /* Info.plist */,
 				CE8B7EAA1E7E89F400292861 /* MorseAlphbet.swift */,
+				CEFA41D31E90080D00243785 /* Keyboard */,
 			);
 			path = Morse;
 			sourceTree = "<group>";
@@ -148,6 +155,16 @@
 				CE8B7EB21E7EE14F00292861 /* Node.swift */,
 			);
 			name = decriptGraph;
+			sourceTree = "<group>";
+		};
+		CEFA41D31E90080D00243785 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CEFA41D11E90080800243785 /* SimpleMorseKeyboard.swift */,
+				CEFA41D41E90082300243785 /* SimpleMorseKeyboard.xib */,
+				CEFA41D61E900B4200243785 /* MorseKeyboardDelegate.swift */,
+			);
+			name = Keyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE8B7E871E7E894300292861 /* LaunchScreen.storyboard in Resources */,
+				CEFA41D51E90082300243785 /* SimpleMorseKeyboard.xib in Resources */,
 				CE8B7E841E7E894300292861 /* Assets.xcassets in Resources */,
 				CE8B7E821E7E894300292861 /* Main.storyboard in Resources */,
 			);
@@ -287,10 +305,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEFA41D71E900B4200243785 /* MorseKeyboardDelegate.swift in Sources */,
 				CE8B7EAB1E7E89F400292861 /* MorseAlphbet.swift in Sources */,
 				CE8B7EAF1E7EDA1900292861 /* Leaf.swift in Sources */,
 				CE8B7E7F1E7E894300292861 /* ViewController.swift in Sources */,
 				CE8B7EB31E7EE14F00292861 /* Node.swift in Sources */,
+				CEFA41D21E90080800243785 /* SimpleMorseKeyboard.swift in Sources */,
 				CE8B7EB11E7EDA4B00292861 /* DecriptGraph.swift in Sources */,
 				CE8B7E7D1E7E894300292861 /* AppDelegate.swift in Sources */,
 			);
