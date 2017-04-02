@@ -10,7 +10,7 @@ import Foundation
 
 protocol MorseKeyboardDelegate: NSObjectProtocol {
     
-    func getCurrentChar() -> String
+    func getCurrentChar(_ morseCryptogram:String) -> String
     func inputChar(char:String) -> Void
     func deleteChar() -> Void
     func submit() -> Void
