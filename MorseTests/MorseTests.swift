@@ -22,8 +22,17 @@ class MorseTests: XCTestCase {
     }
     
     func testDecriptString() {
-        let dectipt = Tree.sharedInstance
-        let value = dectipt.decriptString(morseString: Alphabet.cParenthesisSigns.1)
-        XCTAssertTrue(value == Alphabet.cParenthesisSigns.0, "\(value) is not equile \(Alphabet.cParenthesisSigns.0)");
+
+        let value = EncryptAlphabet.getCodeFromChar(char: Alphabet.bLetter.0)
+            
+            
+            XCTAssertTrue(value == Alphabet.bLetter.1, "\(value) is not equile \(Alphabet.bLetter.1)");
+        
+        
+          let value2 = EncryptAlphabet.getCodeFromChar(char: "assd")
+        
+        
+        XCTAssertNil(value2, "value2 is not nil \(value2)")
+        
     }
 }
