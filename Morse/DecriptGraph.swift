@@ -24,31 +24,20 @@ class Tree: NSObject {
         
         var currentNode = self.startNode!
         
-        
         for char in morseString.characters {
             
-            if(char == "."){
-                guard let node = currentNode.moveDown(true) else {return ""}
-                if(node is Node){
-                    currentNode = node as! Node}
-                else{
-                    return ""}
-            }else{
-                
-                guard let node = currentNode.moveDown(false) else {return ""}
-                
-                if(node is Node){
-                    currentNode = node as! Node}else
-                {return ""}
-            }
+            guard let node = currentNode.moveDown(char == ".") else {return ""}
+            
+            if(node is Node){
+                currentNode = node as! Node}
+            else{
+                return ""}
         }
         
         guard let leaf = currentNode.getLeaf() else {return ""}
         
-    return leaf.storedValue}
-    
-    
-    
+        return leaf.storedValue
+    }
     
     
     

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Alphabet {
+struct MorseAlphbet {
     //space
     static let charSpace = "   "
     static let wordSpace = "       " // space bar

@@ -175,8 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				CE8B7EAE1E7EDA1900292861 /* Leaf.swift */,
-				CE8B7EB01E7EDA4B00292861 /* DecriptGraph.swift */,
 				CE8B7EB21E7EE14F00292861 /* Node.swift */,
+				CE8B7EB01E7EDA4B00292861 /* DecriptGraph.swift */,
 			);
 			name = decriptGraph;
 			sourceTree = "<group>";
