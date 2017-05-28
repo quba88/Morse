@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE1F59291E92B5740028BEFC /* EncryptAlphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F59281E92B5740028BEFC /* EncryptAlphabet.swift */; };
+		CE22D6D51ED9FCDE00CD6E8C /* FlashlightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE22D6D41ED9FCDE00CD6E8C /* FlashlightService.swift */; };
+		CE22D6D81EDA008B00CD6E8C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE22D6D71EDA008B00CD6E8C /* AVFoundation.framework */; };
 		CE8B7E7D1E7E894300292861 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8B7E7C1E7E894300292861 /* AppDelegate.swift */; };
 		CE8B7E7F1E7E894300292861 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8B7E7E1E7E894300292861 /* ViewController.swift */; };
 		CE8B7E821E7E894300292861 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8B7E801E7E894300292861 /* Main.storyboard */; };
@@ -42,7 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CE1F59281E92B5740028BEFC /* EncryptAlphabet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptAlphabet.swift; sourceTree = "<group>"; };
+		CE22D6D41ED9FCDE00CD6E8C /* FlashlightService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashlightService.swift; sourceTree = "<group>"; };
+		CE22D6D71EDA008B00CD6E8C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CE8B7E791E7E894300292861 /* Morse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8B7E7C1E7E894300292861 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE8B7E7E1E7E894300292861 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE22D6D81EDA008B00CD6E8C /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,9 +95,24 @@
 			isa = PBXGroup;
 			children = (
 				CE8B7EAA1E7E89F400292861 /* MorseAlphbet.swift */,
-				CE1F59281E92B5740028BEFC /* EncryptAlphabet.swift */,
 			);
 			name = encriptAlphabet;
+			sourceTree = "<group>";
+		};
+		CE22D6D31ED9FC9200CD6E8C /* Light */ = {
+			isa = PBXGroup;
+			children = (
+				CE22D6D41ED9FCDE00CD6E8C /* FlashlightService.swift */,
+			);
+			name = Light;
+			sourceTree = "<group>";
+		};
+		CE22D6D61EDA008A00CD6E8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE22D6D71EDA008B00CD6E8C /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CE8B7E701E7E894200292861 = {
@@ -105,6 +123,7 @@
 				CE8B7E901E7E894300292861 /* MorseTests */,
 				CE8B7E9B1E7E894300292861 /* MorseUITests */,
 				CE8B7E7A1E7E894300292861 /* Products */,
+				CE22D6D61EDA008A00CD6E8C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +140,7 @@
 		CE8B7E7B1E7E894300292861 /* Morse */ = {
 			isa = PBXGroup;
 			children = (
+				CE22D6D31ED9FC9200CD6E8C /* Light */,
 				CE1F59251E92B4E50028BEFC /* encriptAlphabet */,
 				CE8B7EAD1E7ED9FE00292861 /* decriptGraph */,
 				CE8B7E7C1E7E894300292861 /* AppDelegate.swift */,
@@ -229,6 +249,7 @@
 				TargetAttributes = {
 					CE8B7E781E7E894200292861 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = J48WXZL2X4;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -299,12 +320,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE8B7EAB1E7E89F400292861 /* MorseAlphbet.swift in Sources */,
+				CE22D6D51ED9FCDE00CD6E8C /* FlashlightService.swift in Sources */,
 				CE8B7EAF1E7EDA1900292861 /* Leaf.swift in Sources */,
 				CE8B7E7F1E7E894300292861 /* ViewController.swift in Sources */,
 				CE8B7EB31E7EE14F00292861 /* Node.swift in Sources */,
 				CE8B7EB11E7EDA4B00292861 /* DecriptGraph.swift in Sources */,
 				CE8B7E7D1E7E894300292861 /* AppDelegate.swift in Sources */,
-				CE1F59291E92B5740028BEFC /* EncryptAlphabet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +480,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J48WXZL2X4;
 				INFOPLIST_FILE = Morse/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -472,6 +494,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J48WXZL2X4;
 				INFOPLIST_FILE = Morse/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -23,16 +23,6 @@ class MorseTests: XCTestCase {
     
     func testDecriptString() {
 
-        let value = EncryptAlphabet.getCodeFromChar(char: Alphabet.bLetter.0)
-            
-            
-            XCTAssertTrue(value == Alphabet.bLetter.1, "\(value) is not equile \(Alphabet.bLetter.1)");
-        
-        
-          let value2 = EncryptAlphabet.getCodeFromChar(char: "assd")
-        
-        
-        XCTAssertNil(value2, "value2 is not nil \(value2)")
         
     }
 }
