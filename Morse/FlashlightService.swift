@@ -31,8 +31,26 @@ class FlashlightService:NSObject {
     }
     
     
-    
-    
-    
-    
+    func runMoreFor(char:String, callback:@escaping ()->Void) -> Void {
+
+        DispatchQueue.global(qos: .default).async {
+            
+            let codeFromString = MorseAlphbet.getCodeFromChar(char: char)
+            guard let code = codeFromString  else{callback(); return }
+            var delayTime:uint = 0;
+            
+            for char in code.characters{
+            
+                if char == "." {
+                delayTime = 1 // dot
+                }else{
+                delayTime = 3 // dash
+                }
+            
+            self.toggleFlash()
+            usleep(delayTime)
+            self.toggleFlash()
+            }
+        }
+    }
 }
